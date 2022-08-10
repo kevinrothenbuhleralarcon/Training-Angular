@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content {
+    margin: 0px 10px;
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }    
+
+    .content {
+        width: 50%;
+    }
+}
