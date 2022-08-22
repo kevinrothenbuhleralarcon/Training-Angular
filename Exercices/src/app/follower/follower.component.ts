@@ -15,7 +15,7 @@ export class FollowerComponent implements OnInit {
   ngOnInit(): void {
     this.followerService.getAll()
       .subscribe({
-        next: followers => {this.followers = followers, console.log(followers)}
+        next: followers => this.followers = followers
       })
   }
 
