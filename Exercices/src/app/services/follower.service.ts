@@ -42,6 +42,7 @@ export class FollowerService {
 
   private toFollower(followerDto: FollowerDTO): Follower {
     return {
+      id: followerDto.id,
       avatar: followerDto.avatar_url,
       username: followerDto.login,
       url: followerDto.html_url
