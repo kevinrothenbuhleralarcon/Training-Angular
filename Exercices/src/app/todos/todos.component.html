@@ -1,0 +1,14 @@
+<h1>Todos</h1>
+
+
+<input type="text" class="form-control" (keyup.enter)="add(todo)" #todo>
+
+<div class="list-group">
+    <button 
+        @slide
+        class="list-group-item" 
+        *ngFor="let todo of todos" 
+        (click)="delete(todo)">
+        {{ todo }}
+    </button>
+</div>
